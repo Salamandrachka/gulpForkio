@@ -406,7 +406,7 @@ body {
   font-size: 14px;
 }
 
-.header__logo {
+.header__logo_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,13 +605,17 @@ body {
 
 /**hover**/
 
-.header__logo:hover {
+.header__logo_content:hover {
   background-image: url("../img/logo_pen_hover.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   width: 44px;
   height: 42px;
+  color: #fff;
+}
+
+.header__logo_word:hover {
   color: #fff;
 }
 
@@ -1178,12 +1182,6 @@ body {
     margin: 0;
     padding: 12px 30px;
     font-size: 16px;
-  }
-
-  /**hover**/
-
-  .header__logo_word:hover {
-    color: #fff;
   }
 
   .navbar {

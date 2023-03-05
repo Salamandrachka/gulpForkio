@@ -48,7 +48,11 @@ body{
 		// .header__logo
 
 		&__logo {
-            display: flex;
+            
+			// .header__logo_content
+
+			&_content {
+                display: flex;
             cursor: pointer;
             background-image: url('@img/logo_pen.svg');
             background-size: cover;
@@ -58,12 +62,13 @@ body{
             height: 42px;
             flex-direction: column;
             justify-content: center;
+            
+			}
 
 			// .header__logo_word
 
 			&_word {
                 display: none;
-                
 			}
 		}
 
@@ -248,10 +253,12 @@ body{
 
 /**hover**/
 .header{
+    &__logo{
+       
 
-    // .header__logo
+        // .header__logo_content
 
-    &__logo:hover{
+        &_content:hover {
             background-image: url('@img/logo_pen_hover.svg');
             background-size: cover;
             background-repeat: no-repeat;
@@ -259,9 +266,13 @@ body{
             width: 44px;
             height: 42px;
             color: #fff;
+        }
 
+        // .header__logo_word
 
-
+        &_word:hover{
+            color: #fff;
+        }
     }
 
     // .header__button
@@ -980,21 +991,7 @@ body{
             font-size: 16px;
 		}
 }
-/**hover**/
-.header {
 
-    // .header__logo
-
-    &__logo{
-        // .header__logo_word
-
-        &_word:hover{
-            color: #fff;
-        }
-    }
-
-}
-///
 
 .navbar {
     padding-bottom: 56px;
@@ -1647,9 +1644,7 @@ menu{
                 color: #8d81ac;
 			}
 		}
-        // &__logo:hover{
-            
-        // }
+
 
 		// .header__button
 
